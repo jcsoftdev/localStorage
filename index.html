@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Local Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Local Storage</h1>
+  <div class="container">
+    <form action="#" class="form" id="form">
+      <input name="nombre" type="text" placeholder="nombre">
+      <input name="apellido" type="text" placeholder="apellido">
+      <input name="edad" type="number" placeholder="edad">
+      <select name="sexo" id="sexo">
+        <option value="F">femenino</option>
+        <option value="M">masculino</option>
+      </select>
+      <!-- <a href="#" id="btn" type="submit" data-type="save">Guardar</a> -->
+      <button id="btn" type="submit" data-type="save">guardar</button>
+      <a id="delete" onclick="eliminar(1)">Eliminar</a>
+      <!-- <button  >Eliminar</button> -->
+    </form>
+    <div class="data">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+          </tr>
+        </thead>
+        <tbody id="personsList">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
